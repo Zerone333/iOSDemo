@@ -27,6 +27,7 @@
 		794B577C2456CB580057C035 /* YLTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B57752456CB580057C035 /* YLTag.m */; };
 		794B577D2456CB580057C035 /* YLTagsChooser.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B57772456CB580057C035 /* YLTagsChooser.m */; };
 		794B577E2456CB580057C035 /* YLCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B57792456CB580057C035 /* YLCollectionReusableView.m */; };
+		794B57882456D7650057C035 /* UIColor+YZ.m in Sources */ = {isa = PBXBuildFile; fileRef = 794B57872456D7650057C035 /* UIColor+YZ.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,11 @@
 		794B57772456CB580057C035 /* YLTagsChooser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLTagsChooser.m; sourceTree = "<group>"; };
 		794B57782456CB580057C035 /* YLWaterFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLWaterFlowLayout.h; sourceTree = "<group>"; };
 		794B57792456CB580057C035 /* YLCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLCollectionReusableView.m; sourceTree = "<group>"; };
+		794B57832456D6400057C035 /* YZNotificationMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZNotificationMacro.h; sourceTree = "<group>"; };
+		794B57842456D6570057C035 /* YZHostMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZHostMarco.h; sourceTree = "<group>"; };
+		794B57852456D6750057C035 /* YZAppMarco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YZAppMarco.h; sourceTree = "<group>"; };
+		794B57862456D7650057C035 /* UIColor+YZ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+YZ.h"; sourceTree = "<group>"; };
+		794B57872456D7650057C035 /* UIColor+YZ.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+YZ.m"; sourceTree = "<group>"; };
 		79921DDA8C57922E832824B4 /* Pods-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.debug.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		8186B5CAE513C550D2AA1ACC /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		8429F83684AC8379D6D6A08D /* Pods_Demo_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +161,10 @@
 		794B57272456C0880057C035 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				794B57822456D5E10057C035 /* Unit */,
+				794B57812456D5C30057C035 /* Macro */,
+				794B57802456D5AB0057C035 /* ViewKit */,
+				794B577F2456D5940057C035 /* NetWorking */,
 				794B575E2456C2540057C035 /* Sections */,
 				794B575D2456C16F0057C035 /* AppDelegate */,
 				794B57312456C0880057C035 /* Main.storyboard */,
@@ -258,6 +268,39 @@
 				794B57732456CB580057C035 /* YLCollectionReusableView.h */,
 			);
 			path = YLTagsChooser;
+			sourceTree = "<group>";
+		};
+		794B577F2456D5940057C035 /* NetWorking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		794B57802456D5AB0057C035 /* ViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				794B57862456D7650057C035 /* UIColor+YZ.h */,
+				794B57872456D7650057C035 /* UIColor+YZ.m */,
+			);
+			path = ViewKit;
+			sourceTree = "<group>";
+		};
+		794B57812456D5C30057C035 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				794B57832456D6400057C035 /* YZNotificationMacro.h */,
+				794B57842456D6570057C035 /* YZHostMarco.h */,
+				794B57852456D6750057C035 /* YZAppMarco.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		794B57822456D5E10057C035 /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Unit;
 			sourceTree = "<group>";
 		};
 		796BDC28197E5FBFBA570269 /* Pods */ = {
@@ -522,6 +565,7 @@
 				794B573B2456C08B0057C035 /* main.m in Sources */,
 				794B572D2456C0880057C035 /* SceneDelegate.m in Sources */,
 				794B577D2456CB580057C035 /* YLTagsChooser.m in Sources */,
+				794B57882456D7650057C035 /* UIColor+YZ.m in Sources */,
 				794B577C2456CB580057C035 /* YLTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
