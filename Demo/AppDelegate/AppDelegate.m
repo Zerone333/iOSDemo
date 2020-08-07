@@ -18,7 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    
+//    NSString *UDID = [[UIDevice currentDevice] uniqueIdentifier];
+//    CFUUIDRef cfuuid = CFUUIDCreate(kCFAllocatorDefault);
+//    NSString *cfuuidString = (NSString*)CFBridgingRelease(CFUUIDCreateString(kCFAllocatorDefault, cfuuid));
+//    NSString *uuid = [[NSUUID UUID] UUIDString];
+//    NSLog(@"%@", cfuuidString);
+//    NSLog(@"%@", uuid);
 #if DEBUG
     // iOS
     [[NSBundle bundleWithPath:@"/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle"] load];

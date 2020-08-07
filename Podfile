@@ -9,6 +9,7 @@ target 'Demo' do
 
 pod 'ReactiveObjC'
 pod 'Masonry'
+        pod 'AFNetworking', '> 3.0'
 
   target 'DemoTests' do
     inherit! :search_paths
